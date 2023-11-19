@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Science of Medicine</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top, navbar">
+        <div class="navbar-padding">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Science of Medicine", "Index", "Home", new { area = "" }, new { @class = "black-text navheader" })
+            </div>
+
+            <div class="floatright">
+                <ul class="navtext">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "black-text" })</li>
+                    <li>@Html.ActionLink("Medicine", "Medicine", "Home", new { area = "" }, new { @class = "black-text" })</li>
+                    <li>@Html.ActionLink("Antibiotics", "Antibiotics", "Home", new { area = "" }, new { @class = "black-text" })</li>
+                    <li>@Html.ActionLink("Vaccines", "Vaccines", "Home", new { area = "" }, new { @class = "black-text" })</li>
+                    <li>@Html.ActionLink("Find by Category", "Index", "Categories", new { area = "" }, new { @class = "black-text" })</li>
+                    <li>@Html.ActionLink("Treatments List", "Index", "Treatments", new { area = "" }, new { @class = "black-text" })</li>
+                </ul>
+            </div>
+
+            <div class="floatright">
+                @using (Html.BeginForm("Index", "Treatments", FormMethod.Get, new { @class = "navbar-form floatright" }))
+                {
+                    <div class="form-group">
+                        @Html.TextBox("Search", null, new { @class = "form-control", @placeholder = "Search treatments" })
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="footercol">
+            <p>&copy; @DateTime.Now.Year - Science of Medicine</p>
+            <a href="https://validator.w3.org/docs/users.html#Calling">HTML5 Validator</a>
+            <a href="https://jigsaw.w3.org/css-validator/manual.html">CSS Validator</a>
+            <address>
+                Contact: <a href="mailto:scienceofmedicine@gmail.com">scienceofmedicine@gmail.com</a>
+            </address>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

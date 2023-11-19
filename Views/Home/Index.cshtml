@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <div class="static">
+        <img src="~/Content/Images/microscope_vectorstock.png" alt="homebanner" class="center" />
+        <a href="https://www.vectorstock.com/royalty-free-vector/microscope-icon-flat-icon-with-long-shadow-vector-20927831" target="_blank" class="center linkbox2">Vector image by VectorStock / vectorstock</a>
+    </div>
+    
+    <div class="introfont">
+        <p class="greybanner">Welcome to the Science of Medicine! This site will introduce you to the history of medical development and explain how common antibiotics and vaccines work.</p>
+    </div>
+    <hr />
+    <div class="flex-container">
+        <div class="boxmargin">
+            <div class="linkbox">
+                <img src="~/Content/Images/stethoscope_vectorstock.png" alt="med history image" width="200" height="200" />
+                <a href="https://www.vectorstock.com/royalty-free-vector/stethoscope-with-siren-light-icon-vector-9963933" class="linkbox2">Vector image by VectorStock / kraphix</a>
+                <h3>@Html.ActionLink("Medicine", "Medicine", "Home", new { area = "" }, new { @class = "header3text" })</h3>
+                <p>A summary of medical history and the future of medicine</p>
+                @Html.ActionLink("Learn more", "Medicine", "Home", new { area = "" }, new { @class = "blue-text" })
+            </div>
+
+        </div>
+        <div class="boxmargin">
+
+            <div class="linkbox">
+                <img src="~/Content/Images/pill_vectorstock.png" alt="antibiotics image" width="200" height="200" />
+                <a href="https://www.vectorstock.com/royalty-free-vector/realistic-pill-vector-1955971"  class="linkbox2">Vector image by VectorStock / dunkan</a>
+                <h3>@Html.ActionLink("Antibiotics", "Antibiotics", "Home", new { area = "" }, new { @class = "header3text" })</h3>
+                <p>The discovery of antibiotics, the rise of antibiotic-resistant bacteria and the race to discover new antibiotics</p>
+                @Html.ActionLink("Learn more", "Antibiotics", "Home", new { area = "" }, new { @class = "blue-text" })
+            </div>
+
+        </div>
+        <div class="boxmargin">
+
+            <div class="linkbox">
+                <img src="~/Content/Images/vaccine_vectorstock.png" alt="vaccines image" width="200" height="200" />
+                <a href="https://www.vectorstock.com/royalty-free-vector/realistic-3d-glass-ampoules-with-medicine-vaccine-vector-30414000" class="linkbox2">Vector image by VectorStock / Katrinaku</a>
+                <h3>@Html.ActionLink("Vaccines", "Vaccines", "Home", new { area = "" }, new { @class = "header3text" })</h3>
+                <p>Immunity to diseases, from rabies to tuberculosis</p>
+                @Html.ActionLink("Learn more", "Vaccines", "Home", new { area = "" }, new { @class = "blue-text" })
+            </div>
+
+        </div>
+        <div class="boxmargin">
+
+
+
+        </div>
+    </div>
+</div>

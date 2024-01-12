@@ -38,6 +38,14 @@ textarea {
     background-color: lightgrey;
 }
 
+.homebanner {
+    width: 100%;
+}
+
+.nobottommar {
+    margin-bottom: 0px;
+}
+
 .black-text {
     height: 50px;
     padding: 15px 15px;
@@ -129,6 +137,7 @@ absolute2 {
 
 .linkbox2 {
     font-size: 10px;
+    text-orientation: mixed;
 }
 
 .boxmargin {

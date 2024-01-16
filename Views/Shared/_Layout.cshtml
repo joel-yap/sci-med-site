@@ -25,6 +25,7 @@
                     <li>@Html.ActionLink("Medicine", "Medicine", "Home", new { area = "" }, new { @class = "black-text" })</li>
                     <li>@Html.ActionLink("Antibiotics", "Antibiotics", "Home", new { area = "" }, new { @class = "black-text" })</li>
                     <li>@Html.ActionLink("Vaccines", "Vaccines", "Home", new { area = "" }, new { @class = "black-text" })</li>
+                    <li>@Html.ActionLink("Diseases", "Diseases", "Home", new { area = "" }, new { @class = "black-text" })</li>
                     <li>@Html.ActionLink("Find by Category", "Index", "Categories", new { area = "" }, new { @class = "black-text" })</li>
                     <li>@Html.ActionLink("Treatments List", "Index", "Treatments", new { area = "" }, new { @class = "black-text" })</li>
                 </ul>
@@ -43,7 +44,6 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
         <footer class="footercol">
             <p>&copy; @DateTime.Now.Year - Science of Medicine</p>
             <a href="https://validator.w3.org/docs/users.html#Calling">HTML5 Validator</a>

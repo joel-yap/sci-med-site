@@ -47,5 +47,10 @@ namespace _158258_Assignment_3.Controllers
             return View();
         }
 
+        public ActionResult Diseases()
+        {
+            return View();
+        }
+
     }
 }

@@ -1,18 +1,21 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /* padding-top: 50px;
+    padding-bottom: 20px;*/
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
+    .dl-horizontal dt {
     white-space: normal;
 }
 
@@ -31,19 +34,30 @@ textarea {
 
 .navbar {
     background-color: skyblue;
-    
+}
+
+.blueback {
+    background-color: powderblue;
 }
 
 .greybanner {
     background-color: lightgrey;
+    padding: 10px;
 }
 
 .homebanner {
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .nobottommar {
     margin-bottom: 0px;
+    border: 0px;
+}
+
+.basicpadding {
+    padding: 15px;
 }
 
 .black-text {
@@ -115,7 +129,7 @@ absolute2 {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -126,13 +140,16 @@ absolute2 {
 
 .footercol {
     background-color: lightgrey;
-    height: 50px;
+    height: 100px;
+    padding: 15px;
 }
 
 .linkbox {
     width: 200px;
+    height: 400px;
     background-color: white;
     text-align:center;
+    padding-bottom: 10px;
 }
 
 .linkbox2 {

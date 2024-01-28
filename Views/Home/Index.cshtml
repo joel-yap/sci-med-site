@@ -4,7 +4,7 @@
 
 <div>
     <div class="static">
-        <img src="~/Content/Images/medicine_banner.png" alt="homebanner" class="homebanner" />
+        <img src="~/Content/Images/Biochemistry_lab,_Services_Institute_of_Medical_Sciences.jpg" alt="homebanner" class="homebanner" />
     </div>
     
     <div class="introfont">
@@ -45,7 +45,12 @@
         </div>
         <div class="boxmargin">
 
-
+            <div class="linkbox">
+                <img src="~/Content/Images/SARS-CoV-2.png" alt="SARS-CoV-2 image" width="180" height="180" style="margin: 10px;"/>
+                <h3>@Html.ActionLink("Diseases", "Diseases", "Home", new { area = "" }, new { @class = "header3text" })</h3>
+                <p>Conditions that impact health, their causes and history</p>
+                @Html.ActionLink("Learn more", "Diseases", "Home", new { area = "" }, new { @class = "blue-text" })
+            </div>
 
         </div>
     </div>

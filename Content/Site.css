@@ -38,6 +38,8 @@ textarea {
 
 .blueback {
     background-color: powderblue;
+    padding: 20px;
+    padding-top: 16px;
 }
 
 .greybanner {
@@ -57,14 +59,24 @@ textarea {
 }
 
 .basicpadding {
-    padding: 15px;
+    padding-left: 34px;
+    padding-top: 5px;
+}
+
+.largepadding {
+    padding: 30px;
 }
 
 .black-text {
     height: 50px;
     padding: 15px 15px;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 20px;
+    color: #606060;
+    font-weight: bold;
+}
+
+.black-text2 {
     color: black;
 }
 
@@ -142,6 +154,10 @@ absolute2 {
     text-align: center;
 }
 
+.imagecaption p {
+    font-size: 14px;
+}
+
 .text-top-center {
     position: absolute;
     top: 20%;
@@ -166,7 +182,7 @@ absolute2 {
 .footercol {
     background-color: lightgrey;
     height: 100px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -191,6 +207,15 @@ absolute2 {
     text-align: center;
     margin: 10px;
     padding: 10px;
+}
+
+.maindiv p {
+    line-height: normal;
+    text-align: justify;
+}
+
+.maindiv h2 {
+    text-align: center;
 }
 
 .boxmargin {

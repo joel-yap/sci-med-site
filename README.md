@@ -1,7 +1,7 @@
 # Science of Medicine Website
 
 ## Description
-This is a basic website created to show information about sample medical treatments.
+This is a website created to educate readers about the history of medicine, explain how diseases and various medicines work, and provide a sortable search list with examples of medical treatments.
 
 ## Installation
 The project can be opened in Visual Studio and run as a local website using the default Run option (ILS Express (Google Chrome)).
